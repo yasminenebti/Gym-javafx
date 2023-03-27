@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="576.0" prefWidth="530.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.coachController">
+   <children>
+      <TextField fx:id="txt_name" layoutX="61.0" layoutY="94.0" promptText="Name" styleClass="TextField" stylesheets="@main.css" />
+      <TextField fx:id="txt_phone" layoutX="61.0" layoutY="139.0" promptText="Phone" styleClass="TextField" stylesheets="@main.css" />
+      <TextField fx:id="txt_email" layoutX="61.0" layoutY="187.0" promptText="Email" styleClass="TextField" stylesheets="@main.css" />
+      <Button fx:id="btn_add" layoutX="275.0" layoutY="143.0" mnemonicParsing="false" onMouseClicked="#addCoach" style="-fx-background-color: #1695a4; -fx-background-radius: 10;" text="add" textFill="WHITE">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+      <Button fx:id="btn_mod" layoutX="335.0" layoutY="143.0" mnemonicParsing="false" onMouseClicked="#modifyCoach" style="-fx-background-color: #1695a4; -fx-background-radius: 10;" text="modify" textFill="WHITE">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+      <Button fx:id="btn_dlt" layoutX="415.0" layoutY="143.0" mnemonicParsing="false" onMouseClicked="#deleteCoach" style="-fx-background-color: #1695a4; -fx-background-radius: 10;" text="delete" textFill="WHITE">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+      <TableView fx:id="table_coach" layoutX="15.0" layoutY="288.0" onMouseClicked="#displayCoach" prefHeight="200.0" prefWidth="506.0" stylesheets="@main.css">
+         <columns>
+            <TableColumn fx:id="id" prefWidth="74.39996337890625" text="Id" />
+            <TableColumn fx:id="name" prefWidth="99.19995880126953" text="Name" />
+            <TableColumn fx:id="phone" minWidth="0.0" prefWidth="141.60003662109375" text="Phone" />
+            <TableColumn fx:id="email" minWidth="0.0" prefWidth="189.5999816894531" text="Email" />
+         </columns>
+      </TableView>
+      <Label layoutX="27.0" layoutY="15.0" text="Coaches" textFill="#1695a4">
+         <font>
+            <Font name="Georgia Italic" size="50.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txt_search" layoutX="363.0" layoutY="30.0" prefHeight="26.0" prefWidth="107.0" promptText="Search" styleClass="TextField" stylesheets="@main.css" />
+      <ImageView fitHeight="20.0" fitWidth="20.0" layoutX="488.0" layoutY="34.0">
+         <image>
+            <Image url="@search.png" />
+         </image>
+      </ImageView>
+      <Button layoutX="470.0" layoutY="14.0" mnemonicParsing="false" onMouseClicked="#searchCoach" prefHeight="58.0" prefWidth="56.0" style="-fx-background-color: transparent;" />
+   </children>
+</AnchorPane>

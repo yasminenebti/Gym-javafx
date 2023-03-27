@@ -1,0 +1,47 @@
+.pane{
+    -fx-background-color:#F8F8FF;
+
+}
+
+@font-face{
+  -fx-font-family: 'Droid Serif';
+  -fx-font-weight: 400;
+  src: url('../fonts/DroidSerif/DroidSerif-Regular.ttf') format('truetype');
+}
+
+.button{
+    -fx-background-color:#C38D9E;
+    -fx-background-radius: 20px;
+    -fx-text-fill:black;
+
+}
+.vbox{
+    -fx-background-color: url("C:\Users\Public\application\src\project\images\Free Vector _ Watercolor background design.jpeg");
+    -fx-background-size: 382 432;
+    -fx-background-position: center center;
+}
+.TextField{
+        -fx-background-color: transaprent;
+        -fx-border-color: grey;
+        -fx-border-width: 0 0 1 0;
+        -fx-background-radius: 1;
+        -fx-background-insets: 0 0 0 0, 0, 1, 2;
+}
+.table-view {
+        -fx-background-radius : 20px;
+        -fx-background-color: transaprent;
+}
+.table-view:focused {
+        -fx-background-radius : 20px;
+        -fx-background-color: transaprent;
+}
+.table-view .column-header {
+        -fx-background-color:#fdc00f;
+}
+.table-view .column-header .label {
+        -fx-text-fill:white;
+}
+.btn{
+        -fx-background-color:white;
+        -fx-text-fill:black;
+}

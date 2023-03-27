@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="lib">
+    <CLASSES>
+      <root url="file://$path-to-fx$" />
+      <root url="file://$PROJECT_DIR$/../Connector J 8.0" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+    <jarDirectory url="file://$PROJECT_DIR$/../Connector J 8.0" recursive="false" />
+    <jarDirectory url="file://$path-to-fx$" recursive="false" />
+  </library>
+</component>

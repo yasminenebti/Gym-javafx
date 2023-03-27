@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="576.0" prefWidth="530.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.memberController">
+   <children>
+      <Label layoutX="37.0" layoutY="25.0" text="Members" textFill="#1695a4">
+         <font>
+            <Font name="Georgia Italic" size="50.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txt_name" layoutX="51.0" layoutY="105.0" promptText="Name" styleClass="TextField" stylesheets="@main.css" />
+      <TextField fx:id="txt_phone" layoutX="51.0" layoutY="149.0" promptText="Phone" styleClass="TextField" stylesheets="@main.css" />
+      <TextField fx:id="txt_email" layoutX="51.0" layoutY="196.0" promptText="Email" styleClass="TextField" stylesheets="@main.css" />
+      <Button layoutX="283.0" layoutY="159.0" mnemonicParsing="false" onMouseClicked="#addMember" style="-fx-background-color: #1695A4; -fx-background-radius: 10;" text="add" textFill="WHITE">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+      <Button layoutX="338.0" layoutY="159.0" mnemonicParsing="false" onMouseClicked="#modifyMember" style="-fx-background-color: #1695A4; -fx-background-radius: 10;" text="modify" textFill="WHITE">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+      <Button layoutX="414.0" layoutY="159.0" mnemonicParsing="false" onMouseClicked="#deleteMember" style="-fx-background-color: #1695A4; -fx-background-radius: 10;" text="delete" textFill="WHITE">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+      <TextField fx:id="txt_search" layoutX="370.0" layoutY="40.0" prefHeight="26.0" prefWidth="87.0" promptText="Search" styleClass="TextField" stylesheets="@main.css" />
+      <Button layoutX="433.0" layoutY="12.0" mnemonicParsing="false" onMouseClicked="#searchMember" prefHeight="58.0" prefWidth="87.0" style="-fx-background-color: transaprent;" />
+      <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="462.0" layoutY="26.0">
+         <image>
+            <Image url="@search.png" />
+         </image>
+      </ImageView>
+      <TableView fx:id="table_member" layoutX="5.0" layoutY="298.0" onMouseClicked="#displayMember" prefHeight="200.0" prefWidth="518.0" stylesheets="@main.css">
+        <columns>
+          <TableColumn fx:id="idM" prefWidth="54.400028228759766" text="Id" />
+          <TableColumn fx:id="nameM" prefWidth="161.59997940063477" text="Name" />
+            <TableColumn fx:id="phoneM" prefWidth="108.79997253417969" text="Phone" />
+            <TableColumn fx:id="emailM" prefWidth="192.800048828125" text="Email" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>
